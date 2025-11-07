@@ -1,5 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&family');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+#card-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: #D3D3D3;
+}
+
+.card {
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #4169E1;
+    align-items: center;
+    margin: 10px;
+    border-radius: 20px;
+    font-family: "Noto Sans TC", sans-serif;
+    color: antiquewhite;
+    font-size: 25px;
+}
+
+.card img {
+    width: 400px;
+    height: 300px;
+}
+
+.card button {
+    width: 100%;
+    padding: 5px;
+    border-radius: 0 0 20px 20px; /* Arredonda apenas a pare inferior */
+    font-family: "Noto Sans TC", sans-serif;
 }
