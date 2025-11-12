@@ -1,4 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&family');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+:root {
+
+    /* Variáveis de cor */
+    --cor-principal: #f4a261ff;
+    --cor-sercundaria: #e76f51ff;
+    --cor-descearia: #e9c46aff;
+    --destaque: #2a9d8fff;
+    --destaque-escuro: #264653ff;
+    --preto: #172026;
+    --branco: #F2F2F2;
+    /* Variáveis de cor */
+
+    /* Variáveis de fonte */
+    --fonte-principal: "Playfair Display", serif;
+    --fonte-sercundaria:"Oswald", sans-serif;
+    --fonte-gigante: 25px;
+    --fonte-media: 15px;
+    /* Variáveis de fonte */
+}
 
 * {
     padding: 0;
@@ -6,25 +27,88 @@
     box-sizing: border-box;
 }
 
+.banner {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(6,1fr);
+    background-color: var(--cor-descearia );
+}
+
+.banner img {
+    grid-column: 3/6;
+    grid-row: 2/6;
+}
+
+.banner .texto-foco {
+    grid-column: 7/11;
+    grid-row: 2/5;
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-size: var(--fonte-gigante);
+    font-family: var(--fonte-principal);
+}
+
+.banner .texto-sercundario {
+    grid-column: 7/11;
+    grid-row: 5/6;
+    text-align: center;
+    font-size: var(--fonte-media);
+    font-family: var(--fonte-sercundaria);
+}
+
+/* Replicando banner com flex */
+
+
+.banner2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px;
+    background-color: var(--cor-descearia);
+}
+
+.text-box {
+    text-align: center;
+}
+
+.banner2 img {
+    grid-column: 3/6;
+    grid-row: 2/6;
+}
+
+.texto-foco2 {
+  font-family: var(--fonte-principal);
+  font-size: var(--fonte-gigante);
+}
+
+.texto-sercundario2 {
+   font-family: var(--fonte-sercundaria);
+   font-size: var(--fonte-media);
+}
+
+
+/* Replicando banner com flex */
+
 #card-container {
     display: flex;
     justify-content: space-around;
-    background-color: #D3D3D3;
+    background-color: var(--destaque);
 }
 
 .card {
+    background-color: var(--cor-principal);
     width: 420px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: #4169E1;
     align-items: center;
     margin: 10px;
     border-radius: 20px;
     font-family: "Noto Sans TC", sans-serif;
-    color: antiquewhite;
+    color: var(--branco);
     font-size: 25px;
 }
+
 
 .card img {
     width: 400px;
@@ -34,6 +118,8 @@
 .card button {
     width: 100%;
     padding: 5px;
-    border-radius: 0 0 20px 20px; /* Arredonda apenas a pare inferior */
+    border-radius: 0 0 5px 5px;
+    /* Arredonda apenas a pare inferior */
     font-family: "Noto Sans TC", sans-serif;
+    font-size: 20px;
 }
