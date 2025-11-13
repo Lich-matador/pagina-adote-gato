@@ -15,11 +15,13 @@
 
     /* Variáveis de fonte */
     --fonte-principal: "Playfair Display", serif;
-    --fonte-sercundaria:"Oswald", sans-serif;
+    --fonte-sercundaria: "Oswald", sans-serif;
     --fonte-gigante: 25px;
     --fonte-media: 15px;
     /* Variáveis de fonte */
 }
+
+
 
 * {
     padding: 0;
@@ -29,9 +31,9 @@
 
 .banner {
     display: grid;
-    grid-template-columns: repeat(12,1fr);
-    grid-template-rows: repeat(6,1fr);
-    background-color: var(--cor-descearia );
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    background-color: var(--cor-descearia);
 }
 
 .banner img {
@@ -77,13 +79,13 @@
 }
 
 .texto-foco2 {
-  font-family: var(--fonte-principal);
-  font-size: var(--fonte-gigante);
+    font-family: var(--fonte-principal);
+    font-size: var(--fonte-gigante);
 }
 
 .texto-sercundario2 {
-   font-family: var(--fonte-sercundaria);
-   font-size: var(--fonte-media);
+    font-family: var(--fonte-sercundaria);
+    font-size: var(--fonte-media);
 }
 
 
@@ -121,5 +123,34 @@
     border-radius: 0 0 5px 5px;
     /* Arredonda apenas a pare inferior */
     font-family: "Noto Sans TC", sans-serif;
-    font-size: 20px;
+    font-size: 20px;}
+    
+@media screen and (max-width: 430px) {
+    
+    
+        .barra-navegacacao {
+            background-color: var(--destaque) !important
+        }
+    
+        header {
+            background-color: var(--cor-principal);
+        }
+    
+        .banner {
+            display: flex;
+            flex-direction: column;
+            width: 430px;
+        }
+    
+        .banner2 {
+            display: flex;
+            flex-direction: column;
+            width: 430px;
+        }
+    
+        .container {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
 }

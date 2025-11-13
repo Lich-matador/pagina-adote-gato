@@ -1,0 +1,54 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #ffcc00;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+/* Seção de Produtos */
+#produtos {
+    padding: 50px 0;
+}
+
+.product-card {
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.product-card img {
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.product-card .card-body {
+    text-align: center;
+}
+
+#carrinho {
+    padding: 50px 0;
+}
+
+#carrinho button {
+    font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+}
