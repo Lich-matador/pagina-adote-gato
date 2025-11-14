@@ -123,34 +123,60 @@
     border-radius: 0 0 5px 5px;
     /* Arredonda apenas a pare inferior */
     font-family: "Noto Sans TC", sans-serif;
-    font-size: 20px;}
-    
+    font-size: 20px;
+}
+
+footer{
+    background-color: var(--destaque-escuro);
+    color: var(--branco);
+}
+
+.container-footer p a{
+    text-decoration: none;
+}
+
+.container-footer{
+
+    margin: 50px 204px 50px 204px;
+}
+
+#layer1-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-footer{
+    height: 40px;
+}
+
+
+
+
 @media screen and (max-width: 430px) {
-    
-    
-        .barra-navegacacao {
-            background-color: var(--destaque) !important
-        }
-    
-        header {
-            background-color: var(--cor-principal);
-        }
-    
-        .banner {
-            display: flex;
-            flex-direction: column;
-            width: 430px;
-        }
-    
-        .banner2 {
-            display: flex;
-            flex-direction: column;
-            width: 430px;
-        }
-    
-        .container {
-            flex-direction: column;
-            align-items: center;
-        }
+
+
+    .barra-navegacacao {
+        background-color: var(--destaque) !important
+    }
+
+    header {
+        background-color: var(--cor-principal);
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+        width: 430px;
+    }
+
+    .banner2 {
+        display: flex;
+        flex-direction: column;
+        width: 430px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
     }
 }
